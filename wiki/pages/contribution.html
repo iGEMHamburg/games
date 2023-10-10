@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+  
+{% block title %}Contribution{% endblock %}
+{% block lead %}Make a useful contribution for future iGEM teams. Use this page to document that contribution.{% endblock %}
+
+{% block page_content %}
+
+<div id="container-contribution"></div>
+<!--Ein Element, dass den komplette Seitencontent beinhaltet, muss die id="main" besitzen,-->
+<!--damit die globale Farbe angezeigt wird !!!!!!!!!!!!!!-->
+
+<div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Bronze Medal Criterion #4</h4>
+      <p>Make a useful contribution for future iGEM teams. Use this page to document that contribution.<p>
+      <p>If you are making a contribution by adding information to an existing Part or creating a new Part, you must document your contribution on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to be eligible for this criteria. You can use this page to link to that part and include additional information about your contribution.</p>
+      <hr>
+      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+    </div>
+  </div>
+</div>
+
+<!--Quellen START-->
+<div class="reference-bar gc" onclick="toggleReferenceBar()">
+  <div class="reference-content">
+      <span>References</span>
+      <img src="https://static.igem.wiki/teams/4669/wiki/logo-und-schriftzuege/logo.svg" class="arrow-icon">
+  </div>
+  <div class="sources">
+      <!-- <div class="source">[Nr.] <a style="color: white;" href="..." id="...">Quelle</a></div> -->
+      <!-- Weitere Quellen hier einfügen -->
+  </div>
+</div>
+<script>
+  function toggleReferenceBar() {
+    const referenceBar = document.querySelector('.reference-bar');
+    const sources = document.querySelector('.sources');
+    const arrowIcon = document.querySelector('.arrow-icon');
+    
+    referenceBar.classList.toggle('expanded');
+    sources.style.maxHeight = referenceBar.classList.contains('expanded') ? sources.scrollHeight + "px" : "0";
+    arrowIcon.style.transform = referenceBar.classList.contains('expanded') ? 'rotate(45deg)' : 'rotate(0deg)';
+  }
+</script>
+<!--Quellen ENDE-->
+
+{% endblock %}

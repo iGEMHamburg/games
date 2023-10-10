@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block title %}Team{% endblock %}
+{% block lead %}Meet the Team transFERRITIN iGEM Hamburg 2023{% endblock %}
+
+{% block page_content %}
+
+<script>
+  var imageUrl = 'https://static.igem.wiki/teams/4669/wiki/pages/team/team-front.jpg'; // Ersetze 'URL_DES_BILDES' durch den tatsächlichen Bild-URL
+  // Setze das Hintergrundbild des div-Elements mit der ID 'background-image-container'
+  document.getElementById('background-image-container').style.backgroundImage = 'url(' + imageUrl + ')';
+  var team = document.getElementById('background-image-container');
+
+  team.style.backgroundSize = 'contain';
+  team.style.backgroundRepeat = 'no-repeat';
+  team.style.backgroundPosition = 'center';
+  team.style.marginTop = '10vh';
+
+</script>
+
+<div id="container-team"></div>
+<div id="main">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-xs-12">
+      <div class="team-container gc" id="team-card-click">
+        <div class="team-image-container">
+          <img src="https://static.igem.wiki/teams/4669/wiki/logo-und-schriftzuege/logo.svg" alt="Bild" class="team-round-image" id="team-image" data-original-src="https://static.igem.wiki/teams/4669/wiki/logo-und-schriftzuege/logo.svg" data-alternate-src="https://static.igem.wiki/teams/4669/wiki/team-pictures/dscf6416.jpg">
+        </div>
+        <div class="team-text-container">
+          <p><h3>Lennert Weber 🍻🏖️🍕</h3></p>
+          <p><span style="font-weight: bold;">M.Sc. Molecular Life Sciences</span></p>
+          <div class="team-text-left">
+            <p><span style="font-weight: bold;">Favorite animal:</span> Rusty-Spotted Cat<br>
+            <span style="font-weight: bold;">Hobbys:</span> Roundnet/Spikeball, Handball, gaming, Beer<br>
+            <span style="font-weight: bold;">Theme song:</span> What, me worry?<br>
+            <span style="font-weight: bold;">Useless skill:</span> I know how to brew beer<br>
+            <span style="font-weight: bold;">Favorite Organelle:</span> Ribosome</p>
+            <p>
+              <span style="font-weight: bold;">Active in:</span>
+              <span class="team-colorful-word-fund"> Fundraising (Head)</span>,
+              <span class="team-colorful-word-social"> Socialising (Head)</span>,
+              <span class="team-colorful-word-hp"> Human Practices</span>,
+              <span class="team-colorful-word-wetlab"> Wet Lab</span>,
+              <span class="team-colorful-word-wiki"> Wiki</span>,
+              <span class="team-colorful-word-generic"> TEXT</span>,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Spacer damit eine Lücke zw. Quellen und Navigationsmenü bleibt-->
+<div class="container">
+  <p>
+       
+  </p>
+  <div class="marker"></div>
+</div>
+<!--Seiteninhalt ENDE-->
+
+<!--Quellen START-->
+<div class="reference-bar gc" onclick="toggleReferenceBar()">
+  <div class="reference-content">
+      <span>References</span>
+      <img src="https://static.igem.wiki/teams/4669/wiki/design-elements/plus.svg" class="arrow-icon">
+  </div>
+  <div class="sources">
+      <!-- <div class="source">[Nr.] <a style="color: white;" href="..." id="...">Quelle</a></div> -->
+      <!-- Weitere Quellen hier einfügen -->
+  </div>
+</div>
+<script src="static\referenceBar.js"></script>
+<!--Quellen ENDE-->
+
+<script src="static\team-cards.js" defer></script>
+
+{% endblock %}

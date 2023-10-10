@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}Sponsors of iGEM Hamburg 2023{% endblock %}
+{% block lead %}Check out who made the realization of our project possible!{% endblock %}
+
+{% block page_content %}
+
+<div class="row">
+    Coming soon!
+</div>
+
+<!--Quellen START-->
+<div class="reference-bar gc" onclick="toggleReferenceBar()">
+    <div class="reference-content">
+        <span>References</span>
+        <img src="https://static.igem.wiki/teams/4669/wiki/logo-und-schriftzuege/logo.svg" class="arrow-icon">
+    </div>
+    <div class="sources">
+        <!-- <div class="source">[Nr.] <a style="color: white;" href="..." id="...">Quelle</a></div> -->
+        <!-- Weitere Quellen hier einfügen -->
+    </div>
+  </div>
+  <script>
+    function toggleReferenceBar() {
+      const referenceBar = document.querySelector('.reference-bar');
+      const sources = document.querySelector('.sources');
+      const arrowIcon = document.querySelector('.arrow-icon');
+      
+      referenceBar.classList.toggle('expanded');
+      sources.style.maxHeight = referenceBar.classList.contains('expanded') ? sources.scrollHeight + "px" : "0";
+      arrowIcon.style.transform = referenceBar.classList.contains('expanded') ? 'rotate(45deg)' : 'rotate(0deg)';
+    }
+  </script>
+  <!--Quellen ENDE-->
+
+{% endblock %}

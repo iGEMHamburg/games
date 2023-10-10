@@ -1,0 +1,98 @@
+<footer class="pt-5 pb-5 footer py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-lg-7 col-xs-12">
+        <h4 class="mb-3"> <a href="{{ url_for('pages', page='sponsors')}}">A huge thank you to our sponsors!</a></h4>
+        <div class="sponsor-banner">
+          <div class="sponsor-images">
+            <a href="https://www.uni-hamburg.de/" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/uhh-logo.png" height="80px" width="auto"></a>
+            <a href="https://www.cssb-hamburg.de/" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/cssb-logo.png" height="80px" width="auto"></a>
+            <a href="https://www.biomol.com/" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/biomol-logo.png" height="80px" width="auto"></a>
+          </div>
+        </div>
+        <div class="sponsor-banner">
+          <div class="sponsor-images">
+            <a href="https://labfolder.com/" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/labfolder-logo.png" height="80px" width="auto"></a>
+            <a href="https://www.captainworkwear.de/" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/captainworkwear-logo.png" height="55px" width="auto"></a>
+          </div>
+        </div>
+        <script> // Java Script fürs anhalten und weiter laufen der Logos und berechnet Summe der Logobreiten einer Reihe als Parameter für CSS-Animation
+          const sponsorImages = document.querySelector(".sponsor-images");
+          const images = sponsorImages.querySelectorAll("img");
+          const sponsorRows = document.querySelectorAll('.sponsor-banner');
+
+          sponsorRows.forEach(row => {
+              row.addEventListener('mouseenter', () => {
+                  sponsorRows.forEach(otherRow => {
+                      if (otherRow !== row) {
+                          otherRow.querySelector('.sponsor-images').style.animationPlayState = 'paused';
+                      }
+                  });
+                  row.querySelector('.sponsor-images').style.animationPlayState = 'paused';
+              });
+
+              row.addEventListener('mouseleave', () => {
+                  sponsorRows.forEach(otherRow => {
+                        if (otherRow !== row) {
+                            otherRow.querySelector('.sponsor-images').style.animationPlayState = 'running';
+                        }
+                    });
+                  row.querySelector('.sponsor-images').style.animationPlayState = 'running';
+              });
+          });
+
+          // Die Bilder und ihre Breiten
+          const images2 = document.querySelectorAll(".sponsor-images img");
+
+          // Funktion, um die Summe der Breiten zu berechnen
+          function calculateTotalWidth(images2) {
+              let totalWidth = 0;
+              images2.forEach(image => {
+                  // Füge einen individuellen Wert für jedes Bild hinzu (z.B. image.dataset.customWidth)
+                  let customWidth = parseFloat(image.dataset.customWidth) || 0; // Standardwert: 0
+                  totalWidth += image.clientWidth + 50;
+              });
+              return totalWidth;
+          }
+
+          // Rufe die Funktion auf und speichere die Gesamtbreite als CSS-Variable
+          const totalWidth = calculateTotalWidth(images);
+          document.documentElement.style.setProperty('--total-width', totalWidth + 'px');
+        </script>
+      </div>
+      <div class="col-lg-5 col-xs-12" style="text-align: center";>
+          <h4 class="mt-lg-0 mt-sm-3">Get in touch with us!</h4>
+          <div class="container">
+            <div class="row">
+              <div class="col-7" style="text-align: left";>
+                <p>
+                  iGEM Hamburg c/o Michael Kolbe <br> Center for Structural Systems Biology (CSSB) <br>
+                  c/o Deutsches Elektronen-Synchrotron (DESY)
+                </p>
+              </div>
+              <div class="col-5" style="text-align: left";>
+                <p>
+                  Notkestraße 85, Building 15, <br>22607 Hamburg, Germany<br><small>igem.hamburg@gmail.com</small>
+                </p>
+              </div>
+            </div>
+          </div>          
+          <a href="https://www.instagram.com/igemhamburg/" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/instagram-icon.png" height="40px" width="auto"></a> &emsp;
+          <a href="https://twitter.com/iGEM_Hamburg" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/twitter-icon.png" height="40px" width="auto"></a> &emsp;
+          <a href="https://de.linkedin.com/company/igem-hamburg" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/linkedin-icon.png" height="40px" width="auto"></a> &emsp;
+          <a href="https://gitlab.igem.org/2023/hamburg" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/gitlab-logo.png" height="40px" width="auto" /></a> &emsp;
+          <a href="mailto:igem.hamburg@gmail.com" target="_blank"><img class="grayimg" src="https://static.igem.wiki/teams/4669/wiki/social-media-and-sponsors/mail-logo.png" height="40px" width="auto"/></a>
+      </div>
+
+             
+    </div>
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row mt-4">
+      <div class="col">
+        <p class="mb-0"><small>© 2023 - Content on this site is licensed under a <a class="subfoot" href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 International license</a>.</small> &emsp;
+	      <small>The repository used to create this website is available at <a href="https://gitlab.igem.org/2023/hamburg">gitlab.igem.org/2023/hamburg</a>.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>

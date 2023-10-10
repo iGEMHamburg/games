@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+  
+{% block title %}Project Description{% endblock %}
+{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
+
+{% block page_content %}
+
+<div id="container-description"></div>
+<!--Ein Element, dass den komplette Seitencontent beinhaltet, muss die id="main" besitzen,-->
+<!--damit die globale Farbe angezeigt wird !!!!!!!!!!!!!!-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row mt-4">
+  <div class="col">
+    <div class="bd-callout bd-callout-info">
+      <h4>Bronze Medal Criterion #3</h4>
+      <p>Describe how and why you chose your iGEM project.<p>
+      <hr>
+      <p>Please see the <a href="https://competition.igem.org/judging/medals">2023 Medals Page</a> for more information.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>What should this page contain?</h2>
+    <hr>
+    <ul>
+      <li>A clear and concise description of your project.</li>
+      <li>A detailed explanation of why your team chose to work on this particular project.</li>
+      <li>References and sources to document your research.</li>
+      <li>Use illustrations and other visual resources to explain your project.</li>
+    </ul>
+  </div>
+  <div class="col-lg-4">
+    <h2>Inspirations</h2>
+    <hr>
+    <ul>
+      <li><a href="https://2022.igem.wiki/dtu-denmark/description">2022 DTU-Denmark</a></li>
+      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
+      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
+      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
+      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
+      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-lg-8">
+    <h2>Some advice</h2>
+    <hr>
+    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
+  </div>
+  <div class="col-lg-4">
+    <h2>References</h2>
+    <hr>
+    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
+  </div>
+</div> -->
+
+<div class="row mt-4" id="main">
+  <div class="col" id="divcolor">
+    <figure style="text-align: center;">
+      <img src="https://static.igem.wiki/teams/4669/wiki/logo-und-schriftzuege/logo-und-slogan.png" alt="Failed to load image" height="200px" width="auto">
+    </figure>
+    <p style="font-weight: bold;">With our project “transFERRITIN” we deliver a modulatable new drug delivery system, that can be simply produced in bacteria. We combine the human heavy chain ferritin that we use to encapsulate antibiotic substances with cell penetrating peptides to enter pathogenic bacteria in the human bloodstream. </p>
+
+    <p>Antibiotic resistances have become a rising problem over the last decades. New resistance mechanisms are emerging and more and more infections are becoming harder to treat since the antibiotics become less effective <sup><a href="#WHO1">[1]</a></sup>. The World Health Organisation (WHO) states that “Without urgent action, we are heading for a post-antibiotic era, in which common infections and minor injuries can once again kill.” <sup><a href="#WHO1">[1]</a></sup>. In 2019 an estimated 1.2 million people died because of antibiotic resistances <sup><a href=#TheLancet>[2]</a></sup> To prevent and control the spread of antibiotic resistance, the WHO suggests investing in research and development of new tools <sup><a href="#WHO1">[1]</a></sup>. Therefore, this year's iGEM team Hamburg has joined forces to work on a new system fighting on the most impactful silent pandemic of the century - antibiotic resistance:</p>
+
+    <p>With the implementation of a modulatable drug delivery system, our idea is to design a “trojan horse” that can introduce a selection of different synergistically acting substances into targeted bacteria strains. In this way, we want to test a therapeutic method to transport antimicrobial substances directly into the targeted cell. The drug delivery system will be designed based on modification on the protein complex ferritin, which is found in humans and animals. This protein is essential for the storage of iron and under normal circumstances, it prevents the formation of reactive oxygen species (ROS) in the presence of Fe<sup>2+</sup>. Due to its storage capacity, the protein complex is characterized by a cavity in which chemical substances can be trapped, stored and transported. To load the cavity, we exploit the property that the human heavy chain ferritin consists of 24 subunits that directly assemble after translation, forming a 12 nm wide container with a cavity 8 nm in diameter. The (dis-)assembly of ferritin can be easily controlled by changing the pH value of the surroundings. While at a physiological pH the ferritin is assembled, an extremely basic or sour surrounding will make the ferritin disassemble, making it possible for us to encapsulate antibiotic substances by changing the pH value.</p>
+  
+    <figure style="text-align: center;">
+      <img src="https://static.igem.wiki/teams/4669/wiki/dis-assembly-ferritin-ph.png" alt="Failed to load image" height="200px" width="auto">
+      <figcaption>Fig.1: Illustration of the (dis-)assembly of the 24 subunits of the human heavy chain ferritin in dependence of the pH value of its surroundings</figcaption>
+    </figure>
+
+    <p>For successful encapsulation, the inside of the cavity should be modified and tailored according to the polarity requirements of components to be included. To enable entry into the target organism, the surface of the capsule also requires modification according to the conditions of the environment as well as the ability to break through cell walls of bacteria. For this purpose, we use fusion chimeras in which the ferritin complex is equipped with cell penetrating peptides (CPP). These are characterized by the special property of being able to migrate independently through plasma membranes and thereby mediate the transport of cargo molecules.</p>
+
+    <p>We are merging ferritin and different CPPs on a genetic level. Every subunit will be translated with a CPP on its N-Terminus. </p>
+
+    <!-- Hier Video 1-->
+
+    <p>For providing specificity we want to add bispecific nanobodies, which on the one hand bind to our ferritin complex and on the other hand bind to the specific target. Doing this, we can ensure that no endogenous bacteria are being attacked.</p> 
+
+    <!-- Hier Video 2-->
+
+    <p>In 2017 the WHO published a list with priority pathogens for research and development of new antibiotics <sup><a href="#WHO2">[3]</a></sup>. In the highest priority group (“critical”) one can find the pathogen Pseudomonas aeruginosa. After testing it on <i>Escherichia coli</i> as a proof of concept, it is our vision to test our transFERRITIN system on <i>Pseudomonas aeruginosa </i> to provide a new approach for the treatment. </p>
+
+    <p>By releasing the antimicrobial agent inside the cell, we hope to increase efficiency and thus reduce the required drug concentration, which could save both costs and resources. Furthermore, we hypothesize that by using multiple, antibacterial and synergistic components, we may be able to make resistant germs sensitive to antibiotics again by having the components inhibit the resistance mechanisms. After optimizing our transport system in <i>Escherichia coli</i>, we will test the complex on the pandrug-resistant germ <i>Pseudomonas aeruginosa</i> to implement our system in the real world. </p>
+
+    <figure style="text-align: center;">
+      <img src="https://static.igem.wiki/teams/4669/wiki/transferritin-mindmap.png" alt="Failed to load image" height="200px" width="auto">
+      <figcaption>Fig.2: Mind-Map showing all the different components our project transFERRITIN contains</figcaption>
+    </figure>
+    <!-- Hier Mind-Map Bild-->
+  </div>
+  <!--Quellen START-->
+  <div class="reference-bar gc" onclick="toggleReferenceBar()">
+    <div class="reference-content">
+        <span>References</span>
+        <img src="https://static.igem.wiki/teams/4669/wiki/design-elements/plus.svg" class="arrow-icon">
+    </div>
+    <div class="sources">
+        <div class="source">[1] <a style="color: white;" href="https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance" id="WHO1">https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance</a></div>
+        <div class="source">[2] <a style="color: white;" href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext" id="TheLancet">https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext</a></div>
+        <div class="source">[3] <a style="color: white;" href="https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed" id="WHO2">https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed</a></div>
+        <!-- <div class="source">[Nr.] <a style="color: white;" href="..." id="...">Quelle</a></div> -->
+        <!-- Weitere Quellen hier einfügen -->
+    </div>
+  </div>
+  <script>
+    function toggleReferenceBar() {
+      const referenceBar = document.querySelector('.reference-bar');
+      const sources = document.querySelector('.sources');
+      const arrowIcon = document.querySelector('.arrow-icon');
+      
+      referenceBar.classList.toggle('expanded');
+      sources.style.maxHeight = referenceBar.classList.contains('expanded') ? sources.scrollHeight + "px" : "0";
+      arrowIcon.style.transform = referenceBar.classList.contains('expanded') ? 'rotate(45deg)' : 'rotate(0deg)';
+    }
+  </script>
+  <!--Quellen ENDE-->
+</div>
+
+{% endblock %}
+<!--Fußnoten-Links-->
+[1] <a style="color: white;" href="https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance" id="WHO1">https://www.who.int/news-room/fact-sheets/detail/antibiotic-resistance</a> <br>
+[2] <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext" id="TheLancet">https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext</a> <br>
+[3] <a href="https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed" id="WHO2">https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed</a> <br>
