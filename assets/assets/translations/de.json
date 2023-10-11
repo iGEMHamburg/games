@@ -16,6 +16,13 @@
          "story_3": "Deine wissenschaftliche Expertise findest du auf dem Kartensatz vor dir.\n\nDas Spiel findet rundenbasiert statt - zuerst ist die Wissenschaft am Zug, gefolgt von der Antwort des Bakteriums. Pass auf, denn es kann während des Spiels mutieren und sich weiterentwickeln!\n\nLies dir den Kartensatz aufmerksam durch und wähle eine passende Karte aus, um das Bakterium effizient zu bekämpfen.\n\nDas Ziel des Bakteriums ist es: Am Leben bleiben.\nDas Ziel der Wissenschaft ist es: Das Bakterium unschädlich machen!",
          "good_luck": "Viel Erfolg und gutes Gelingen! "
       },
+      "start_text_1": "Moin und herzlich willkommen beim Antibiotikaresistenz-Spiel des iGEM Team Hamburg 2023!",
+      "start_text_2": "Antibiotikaresistenzen stellen ein gravierendes und stetig wachsendes Problem auf globaler Ebene dar. Diese Resistenzen bedrohen nicht nur die Effektivität unserer derzeitigen Medikamente, sondern auch die Gesundheit von Millionen von Menschen weltweit. Daher verdient diese Thematik nicht nur unsere volle Aufmerksamkeit, sondern auch proaktive Maßnahmen!",
+      "start_text_3": "Mit diesem interaktiven Spiel möchten wir das Bewusstsein schärfen und über die Mechanismen der Resistenzen informieren.",
+      "start_text_4": "Es ist an der Zeit, dass wir uns zusammenschließen und handeln, um die Ausbreitung von Antibiotikaresistenzen zu bekämpfen und die Gesundheit künftiger Generationen zu sichern. Also lass uns keine Zeit verlieren! Auf geht’s!",
+      "start_text_5": "P.S. Wenn Du mehr über uns und unsere Forschung erfahren möchtest, findest Du ",
+      "start_text_6": " weitere Informationen.",
+      "link": "hier",
       "imprint": "Impressum"
    },
    "hints": {

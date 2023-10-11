@@ -16,6 +16,13 @@
          "story_3": "Your scientific expertise is found within the set of cards in front of you.\n\nThe game is played in rounds - first, the science takes its turn, followed by the bacterium's response. Be cautious, as the bacterium might mutate and evolve during the game!\n\nCarefully read through the set of cards and choose an appropriate one to efficiently combat the bacterium.\n\nThe bacterium's goal is to: Stay alive.\n\nThe science's goal is to: Render the Bacterium harmless!",
          "good_luck": "Best of luck and success!"
       },
+      "start_text_1": "Moin and welcome to the Antibiotic Resistance Game of the iGEM Team Hamburg 2023!",
+      "start_text_2": "Antibiotic resistances pose a significant and continuously growing challenge on a global scale. These resistances not only jeopardize the effectiveness of our current medications but also the health of millions of people worldwide. Therefore, this issue not only deserves our full attention but also proactive measures!",
+      "start_text_3": "With this interactive game, we aim to raise awareness and educate about the mechanisms of resistances.",
+      "start_text_4": "It's time for us to come together and take action to combat the spread of antibiotic resistances and safeguard the health of future generations. So, let's not waste any time! Let's go!",
+      "start_text_5": "P.S. If you want to learn more about us and our research, you can find additional information ",
+      "start_text_6": ".",
+      "link": "here",
       "imprint": "Imprint"
    },
    "hints": {
