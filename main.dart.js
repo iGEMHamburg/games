@@ -72524,7 +72524,7 @@ A.wx.prototype={}
 A.xH.prototype={
 ai(){return new A.Vk(B.n)}}
 A.Vk.prototype={
-L(a){var s,r=null,q=t.l,p=A.adC("https://static.igem.wiki/teams/4669/wiki/game//header-waves.svg",r,B.FV,r,A.cu(a,r,q).w.a.a),o=A.ek(r,r,A.cu(a,r,q).w.a.a*0.15),n=A.HG(B.Ma,new A.ajv(a),r),m=A.HG(A.cV(A.cI("menu.imprint"),r,r),new A.ajw(a),r),l=t.IB,k=a.ar(l).r.a
+L(a){var s,r=null,q=t.l,p=A.adC("https://static.igem.wiki/teams/4669/wiki/game/header-waves.svg",r,B.FV,r,A.cu(a,r,q).w.a.a),o=A.ek(r,r,A.cu(a,r,q).w.a.a*0.15),n=A.HG(B.Ma,new A.ajv(a),r),m=A.HG(A.cV(A.cI("menu.imprint"),r,r),new A.ajw(a),r),l=t.IB,k=a.ar(l).r.a
 k===$&&A.b()
 k=k.gbZ(k)
 l=a.ar(l).r.a
